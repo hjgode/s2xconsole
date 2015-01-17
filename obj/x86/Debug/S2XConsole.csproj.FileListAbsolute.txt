@@ -1,0 +1,13 @@
+D:\s2xconsole\ilSpy\obj\x86\Debug\S2XConsole.csprojResolveAssemblyReference.cache
+D:\s2xconsole\ilSpy\obj\x86\Debug\S2XConsole.g.resources
+D:\s2xconsole\ilSpy\bin\Debug\S2XConsole.exe
+D:\s2xconsole\ilSpy\bin\Debug\S2XConsole.pdb
+D:\s2xconsole\ilSpy\bin\Debug\Newtonsoft.Json.dll
+D:\s2xconsole\ilSpy\bin\Debug\S2X.dll
+D:\s2xconsole\ilSpy\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\s2xconsole\ilSpy\bin\Debug\Syncfusion.Core.dll
+D:\s2xconsole\ilSpy\bin\Debug\Syncfusion.Compression.Base.dll
+D:\s2xconsole\ilSpy\obj\x86\Debug\S2XConsole.exe
+D:\s2xconsole\ilSpy\obj\x86\Debug\S2XConsole.pdb
+D:\s2xconsole\ilSpy\bin\Debug\S2pHelper.dll
+D:\s2xconsole\ilSpy\bin\Debug\zlib1.dll
