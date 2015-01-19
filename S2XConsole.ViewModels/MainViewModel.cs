@@ -299,6 +299,8 @@ namespace S2XConsole.ViewModels
 			if (this.IsBrowseMode)
 			{
 				text = this.GetBrowseData();
+                System.Diagnostics.Debug.WriteLine("GetBrowseData(): " + text);
+
 			}
 			else
 			{
@@ -306,6 +308,7 @@ namespace S2XConsole.ViewModels
 				{
 					using (LinkedList<System.Windows.Controls.UserControl>.Enumerator enumerator = this.PageList.GetEnumerator())
 					{
+                        int i = 0;
 						while (enumerator.MoveNext())
 						{
 							System.Windows.Controls.UserControl current = enumerator.Current;
@@ -313,6 +316,7 @@ namespace S2XConsole.ViewModels
 							{
 								IPage page = current as IPage;
 								text += page.PageData();
+                                System.Diagnostics.Debug.WriteLine("page " + i.ToString() + ": " + text);
 							}
 						}
 						goto IL_12B;

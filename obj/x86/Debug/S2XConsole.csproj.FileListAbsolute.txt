@@ -11,3 +11,17 @@ D:\s2xconsole\ilSpy\obj\x86\Debug\S2XConsole.exe
 D:\s2xconsole\ilSpy\obj\x86\Debug\S2XConsole.pdb
 D:\s2xconsole\ilSpy\bin\Debug\S2pHelper.dll
 D:\s2xconsole\ilSpy\bin\Debug\zlib1.dll
+C:\c-source\s2xconsole\obj\x86\Debug\S2XConsole.exe
+C:\c-source\s2xconsole\obj\x86\Debug\S2XConsole.pdb
+C:\c-source\s2xconsole\obj\x86\Debug\S2XConsole.csprojResolveAssemblyReference.cache
+C:\c-source\s2xconsole\obj\x86\Debug\S2XConsole.g.resources
+C:\c-source\s2xconsole\bin\Debug\S2pHelper.dll
+C:\c-source\s2xconsole\bin\Debug\zlib1.dll
+C:\c-source\s2xconsole\bin\Debug\S2XConsole.exe
+C:\c-source\s2xconsole\bin\Debug\S2XConsole.pdb
+C:\c-source\s2xconsole\bin\Debug\Newtonsoft.Json.dll
+C:\c-source\s2xconsole\bin\Debug\S2X.dll
+C:\c-source\s2xconsole\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\c-source\s2xconsole\bin\Debug\Syncfusion.Core.dll
+C:\c-source\s2xconsole\bin\Debug\Syncfusion.Compression.Base.dll
+C:\c-source\s2xconsole\bin\Debug\msvcr90.dll
