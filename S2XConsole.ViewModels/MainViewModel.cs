@@ -291,6 +291,7 @@ namespace S2XConsole.ViewModels
 		}
 		public string GetBarCodeData()
 		{
+            System.Diagnostics.Debug.WriteLine("MainViewModel::GetBarCodeData()");
 			if (this.PageList == null)
 			{
 				return string.Empty;
@@ -298,13 +299,13 @@ namespace S2XConsole.ViewModels
 			string text = string.Empty;
 			if (this.IsBrowseMode)
 			{
-				text = this.GetBrowseData();
+				text = this.GetBrowseData();    //read xml input using file explorer
                 System.Diagnostics.Debug.WriteLine("GetBrowseData(): " + text);
 
 			}
 			else
 			{
-				if (!Common.UsingJson)
+                if (!Common.UsingJson)  //true for JSON / Android download only
 				{
 					using (LinkedList<System.Windows.Controls.UserControl>.Enumerator enumerator = this.PageList.GetEnumerator())
 					{
@@ -318,6 +319,7 @@ namespace S2XConsole.ViewModels
 								text += page.PageData();
                                 System.Diagnostics.Debug.WriteLine("page " + i.ToString() + ": " + text);
 							}
+                            i++;
 						}
 						goto IL_12B;
 					}
@@ -325,6 +327,7 @@ namespace S2XConsole.ViewModels
 				List<string> list = new List<string>();
 				foreach (System.Windows.Controls.UserControl current2 in this.PageList)
 				{
+                    int i = 0;
 					if (current2 is IPage)
 					{
 						IPage page2 = current2 as IPage;
@@ -333,14 +336,19 @@ namespace S2XConsole.ViewModels
 						{
 							try
 							{
-								JObject.Parse(text2);
+                                System.Diagnostics.Debug.WriteLine("page2 " + i.ToString() + ": " + text2);
+                                // "{\r\n  \"s\": {\r\n    \"WiFi\": {\r\n      \"base\": 0,\r\n      \"v\": 0,\r\n      \"mode\": \"full\",\r\n      \"nets\": [\r\n        {\r\n          \"ssid\": \"\\\"MyNetworkName1\\\"\",\r\n          \"pri\": 3,\r\n          \"hid\": 0,\r\n          \"auth\": \"OPEN,SHARED\",\r\n          \"km\": \"NONE\",\r\n          \"wepk\": [\r\n            \"*\",\r\n            \"\",\r\n            \"\",\r\n            \"\"\r\n          ]\r\n        },\r\n        {\r\n          \"ssid\": \"\\\"MyNetworkName2\\\"\",\r\n          \"pri\": 1,\r\n          \"hid\": 0,\r\n          \"auth\": \"\",\r\n          \"km\": \"WPA_PSK\",\r\n          \"pskey\": \"*\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"v\": \"1.0\"\r\n}"
+								JObject.Parse(text2); // will throw exception if not JSON like
+                                System.Diagnostics.Debug.WriteLine("page2 parsed " + i.ToString() + ": " + text2);
 								list.Add(text2);
+                                // "{\r\n  \"s\": {\r\n    \"WiFi\": {\r\n      \"base\": 0,\r\n      \"v\": 0,\r\n      \"mode\": \"full\",\r\n      \"nets\": [\r\n        {\r\n          \"ssid\": \"\\\"MyNetworkName1\\\"\",\r\n          \"pri\": 3,\r\n          \"hid\": 0,\r\n          \"auth\": \"OPEN,SHARED\",\r\n          \"km\": \"NONE\",\r\n          \"wepk\": [\r\n            \"*\",\r\n            \"\",\r\n            \"\",\r\n            \"\"\r\n          ]\r\n        },\r\n        {\r\n          \"ssid\": \"\\\"MyNetworkName2\\\"\",\r\n          \"pri\": 1,\r\n          \"hid\": 0,\r\n          \"auth\": \"\",\r\n          \"km\": \"WPA_PSK\",\r\n          \"pskey\": \"*\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"v\": \"1.0\"\r\n}"
 							}
 							catch (Exception)
 							{
 							}
 						}
 					}
+                    i++;
 				}
 				if (list.Count == 0)
 				{
@@ -425,6 +433,7 @@ namespace S2XConsole.ViewModels
 		}
 		private string GetBrowseData()
 		{
+            System.Diagnostics.Debug.WriteLine("MainViewModel::GetBrowseData()");
 			Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
 			openFileDialog.DefaultExt = ".xml";
 			openFileDialog.Filter = "Settings (.xml)|*.xml";

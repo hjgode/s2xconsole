@@ -109,13 +109,10 @@
     <Resource Include="views\summaryview.baml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="msvcr90.dll">
+    <Content Include="readme.txt" />
+    <Content Include="S2pHelper.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="readme.txt" />
-    <None Include="S2pHelper.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <Content Include="sample\WLAN_support.xml" />
     <Content Include="zlib1.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

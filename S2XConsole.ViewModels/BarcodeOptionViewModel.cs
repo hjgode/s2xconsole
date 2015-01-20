@@ -234,6 +234,7 @@ namespace S2XConsole.ViewModels
 		}
         public S2X.S2X Update()
 		{
+            System.Diagnostics.Debug.WriteLine("BarcodeOptionViewModel::Update()");
 			try
 			{
 				string name = Enum.GetName(typeof(Symbol), this.BarcodeType);

@@ -25,3 +25,16 @@ C:\c-source\s2xconsole\bin\Debug\Syncfusion.Pdf.Base.dll
 C:\c-source\s2xconsole\bin\Debug\Syncfusion.Core.dll
 C:\c-source\s2xconsole\bin\Debug\Syncfusion.Compression.Base.dll
 C:\c-source\s2xconsole\bin\Debug\msvcr90.dll
+D:\svn\git\s2xconsole\obj\x86\Debug\S2XConsole.exe
+D:\svn\git\s2xconsole\obj\x86\Debug\S2XConsole.pdb
+D:\svn\git\s2xconsole\bin\Debug\zlib1.dll
+D:\svn\git\s2xconsole\bin\Debug\Newtonsoft.Json.dll
+D:\svn\git\s2xconsole\bin\Debug\S2X.dll
+D:\svn\git\s2xconsole\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\svn\git\s2xconsole\bin\Debug\Syncfusion.Core.dll
+D:\svn\git\s2xconsole\bin\Debug\Syncfusion.Compression.Base.dll
+D:\svn\git\s2xconsole\obj\x86\Debug\S2XConsole.csprojResolveAssemblyReference.cache
+D:\svn\git\s2xconsole\obj\x86\Debug\S2XConsole.g.resources
+D:\svn\git\s2xconsole\bin\Debug\S2XConsole.exe
+D:\svn\git\s2xconsole\bin\Debug\S2XConsole.pdb
+D:\svn\git\s2xconsole\bin\Debug\S2pHelper.dll
