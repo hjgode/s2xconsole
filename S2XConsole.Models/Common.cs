@@ -135,6 +135,7 @@ namespace S2XConsole.Models
 		}
 		public static bool IsJsonActionValid(string input)
 		{
+            System.Diagnostics.Debug.WriteLine("IsJsonActionValid");
 			try
 			{
 				JObject jObject = JObject.Parse(input);
@@ -158,6 +159,7 @@ namespace S2XConsole.Models
 		}
 		internal static string TransformJsonText(string input)
 		{
+            System.Diagnostics.Debug.WriteLine("TransformJsonText in=" + input);
 			string result = input;
 			try
 			{
@@ -202,10 +204,12 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
+            System.Diagnostics.Debug.WriteLine("TransformJsonText out=" + result);
 			return result;
 		}
 		internal static bool TestStringWithinJson(string input)
 		{
+            System.Diagnostics.Debug.WriteLine("TestStringWithinJson in=" + input);
 			bool result;
 			try
 			{
@@ -223,6 +227,7 @@ namespace S2XConsole.Models
 		}
 		private static string oldTransformJsonText(string input)
 		{
+            System.Diagnostics.Debug.WriteLine("oldTransformJsonText in=" + input);
 			string result = input;
 			try
 			{
@@ -249,10 +254,12 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
+            System.Diagnostics.Debug.WriteLine("oldTransformJsonText out=" + result);
 			return result;
 		}
 		private static void renameJsonToken(JObject jo, string tokenName, string newTokenName)
 		{
+            System.Diagnostics.Debug.WriteLine("renameJsonToken");
 			JToken jToken = jo.SelectToken(tokenName);
 			if (jToken != null)
 			{
@@ -263,6 +270,7 @@ namespace S2XConsole.Models
 		}
 		public static string TrimJsonWhitespace(string input)
 		{
+            System.Diagnostics.Debug.WriteLine("TrimJsonWhitespace in="+input);
 			string result = input;
 			try
 			{
@@ -272,7 +280,8 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
-			return result;
+            System.Diagnostics.Debug.WriteLine("TrimJsonWhitespace out=" + result);
+            return result;
 		}
 		public static bool IsXmlString(string input)
 		{
@@ -304,7 +313,8 @@ namespace S2XConsole.Models
 		}
 		public static string PrepareXmlContent(string xml)
 		{
-			string result = xml;
+            System.Diagnostics.Debug.WriteLine("PrepareXmlContent in=" + xml);
+            string result = xml;
 			try
 			{
 				XDocument node = XDocument.Parse(xml);
@@ -322,10 +332,12 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
+            System.Diagnostics.Debug.WriteLine("PrepareXmlContent out=" + result);
 			return result;
 		}
 		public static string WrapXmlInDevInfo(string input)
 		{
+            System.Diagnostics.Debug.WriteLine("WrapXmlInDevInfo in=" + input);
 			string result = input;
 			try
 			{
@@ -347,6 +359,7 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
+            System.Diagnostics.Debug.WriteLine("WrapXmlInDevInfo out=" + result);
 			return result;
 		}
 		public static void WriteEntryToLog(string message, EventLogEntryType type)

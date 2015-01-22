@@ -249,6 +249,7 @@ namespace S2XConsole.ViewModels
 				}
 				this.VersionNumber = this.mainViewModel.Version();
 				string[] names = Enum.GetNames(typeof(Symbol));
+                names = new string[] { Symbol.PDF417.ToString() };  //only interested in PDF417
 				for (int i = 0; i < names.Length; i++)
 				{
 					string text3 = names[i];
@@ -271,7 +272,26 @@ namespace S2XConsole.ViewModels
 							s2X.IsNoStartBarcode = true;
 						}
 						s2X.SetSourceName(Common.GetFullFooterAddition());
+                        // "{\"s\":{\"WiFi\":{\"base\":0,\"v\":0,\"mode\":\"full\",\"nets\":[{\"ssid\":\"\\\"MyNetworkName1\\\"\",\"pri\":3,\"hid\":0,\"auth\":\"OPEN,SHARED\",\"km\":\"NONE\",\"wepk\":[\"*\",\"\",\"\",\"\"]},{\"ssid\":\"\\\"MyNetworkName2\\\"\",\"pri\":1,\"hid\":0,\"auth\":\"\",\"km\":\"WPA_PSK\",\"pskey\":\"*\"}]}},\"v\":\"1.0\"}"
 						s2X.PrintPages(this.Instruction, this.Password, text2, symbol, this.VersionNumber);
+                        /*
+                        // JSON download
+                        data={"v":1.0,"r":["ftp://199.64.70.66/textfiles"],"w":{"textfiledestination/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/updates","c":[{"s":"loadtextfileurl.txt","d":"textfile/loadtextfileurldest"}]}
+                        */
+                        if (symbol == Symbol.PDF417)
+                        {
+                            System.Diagnostics.Debug.WriteLine(string.Format(
+                                "data={0}\r\n instructions={1}\r\n pass={2}\r\n version={3}\r\nCommon.UsingJson={4}\r\nSetSourceName={5}\r\nIsNoReboot={6}\r\nIsNoStartBarcode={7}",
+                                text2,
+                                this.Instruction,
+                                this.Password,
+                                this.VersionNumber,
+                                Common.UsingJson,
+                                Common.GetFullFooterAddition(),
+                                s2X.IsNoReboot,
+                                s2X.IsNoStartBarcode));
+                        }
+
 						this.barcodeResult[text3] = s2X;
 						string text4 = string.Format("Estimated bar codes {0}", s2X.EstimatedBarcodes);
 						if (symbol == Symbol.PDF417)

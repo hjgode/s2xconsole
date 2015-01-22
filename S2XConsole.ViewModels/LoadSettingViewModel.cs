@@ -126,8 +126,13 @@ namespace S2XConsole.ViewModels
 				expr_129.URLCollection = expr_129.URLCollection + this.separator[0] + newTextFileFromUrl;
 			}
 		}
+
+        /// <summary>
+        /// loads the selected settings of the download options dialog and creates JSON or XML data
+        /// </summary>
+        /// <returns></returns>
 		public string PageData()
-		{
+		{          
 			string text = string.Empty;
 			if (!Common.UsingJson)
 			{

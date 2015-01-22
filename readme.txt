@@ -10,6 +10,16 @@ start with /standalone -> Common.IsInStandaloneMode=>TRUE
 new OptionView
 Common.IsInStandaloneMode=>TRUE
 
+//you must check 'Communication Settings' and that will result in
+	control = new StandaloneBrowse();
+	and
+	OptionView::this.isCommunicationSettingsPresent = true;
+	and 
+	this.viewModel.AddPage(new BarcodeOptionView(this.viewModel));
+	then you MUST specify a file (JSON or XML)
+	next we are in 
+	StandAloneBrowse::GetBrowseData()
+
 OptionView.cs->[X] Communication Settings => new StandaloneBrowse();
 	OptionView.cs->this.isCommunicationSettingsPresent = true;
 	OptionView.cs->this.viewModel.AddPage(new BarcodeOptionView(this.viewModel));
