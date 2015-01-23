@@ -290,8 +290,8 @@ namespace S2XConsole.ViewModels
 			}
 		}
 		public string GetBarCodeData()
-		{
-            System.Diagnostics.Debug.WriteLine("MainViewModel::GetBarCodeData()");
+		{            
+            Logger.logger.add2log("MainViewModel::GetBarCodeData()");
 			if (this.PageList == null)
 			{
 				return string.Empty;
@@ -300,7 +300,7 @@ namespace S2XConsole.ViewModels
 			if (this.IsBrowseMode)
 			{
 				text = this.GetBrowseData();    //read xml input using file explorer
-                System.Diagnostics.Debug.WriteLine("GetBrowseData(): " + text);
+                Logger.logger.add2log("GetBrowseData(): " + text);
 
 			}
 			else
@@ -317,7 +317,7 @@ namespace S2XConsole.ViewModels
 							{
 								IPage page = current as IPage;
 								text += page.PageData();
-                                System.Diagnostics.Debug.WriteLine("page " + i.ToString() + ": " + text);
+                                Logger.logger.add2log("MainViewModel::page " + i.ToString() + ": " + text);
 							}
                             i++;
 						}
@@ -336,10 +336,10 @@ namespace S2XConsole.ViewModels
 						{
 							try
 							{
-                                System.Diagnostics.Debug.WriteLine("page2 " + i.ToString() + ": " + text2);
+                                Logger.logger.add2log("MainViewModel::page2 " + i.ToString() + ": " + text2);
                                 // "{\r\n  \"s\": {\r\n    \"WiFi\": {\r\n      \"base\": 0,\r\n      \"v\": 0,\r\n      \"mode\": \"full\",\r\n      \"nets\": [\r\n        {\r\n          \"ssid\": \"\\\"MyNetworkName1\\\"\",\r\n          \"pri\": 3,\r\n          \"hid\": 0,\r\n          \"auth\": \"OPEN,SHARED\",\r\n          \"km\": \"NONE\",\r\n          \"wepk\": [\r\n            \"*\",\r\n            \"\",\r\n            \"\",\r\n            \"\"\r\n          ]\r\n        },\r\n        {\r\n          \"ssid\": \"\\\"MyNetworkName2\\\"\",\r\n          \"pri\": 1,\r\n          \"hid\": 0,\r\n          \"auth\": \"\",\r\n          \"km\": \"WPA_PSK\",\r\n          \"pskey\": \"*\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"v\": \"1.0\"\r\n}"
 								JObject.Parse(text2); // will throw exception if not JSON like
-                                System.Diagnostics.Debug.WriteLine("page2 parsed " + i.ToString() + ": " + text2);
+                                Logger.logger.add2log("MainViewModel::page2 parsed " + i.ToString() + ": " + text2);
 								list.Add(text2);
                                 // "{\r\n  \"s\": {\r\n    \"WiFi\": {\r\n      \"base\": 0,\r\n      \"v\": 0,\r\n      \"mode\": \"full\",\r\n      \"nets\": [\r\n        {\r\n          \"ssid\": \"\\\"MyNetworkName1\\\"\",\r\n          \"pri\": 3,\r\n          \"hid\": 0,\r\n          \"auth\": \"OPEN,SHARED\",\r\n          \"km\": \"NONE\",\r\n          \"wepk\": [\r\n            \"*\",\r\n            \"\",\r\n            \"\",\r\n            \"\"\r\n          ]\r\n        },\r\n        {\r\n          \"ssid\": \"\\\"MyNetworkName2\\\"\",\r\n          \"pri\": 1,\r\n          \"hid\": 0,\r\n          \"auth\": \"\",\r\n          \"km\": \"WPA_PSK\",\r\n          \"pskey\": \"*\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"v\": \"1.0\"\r\n}"
 							}
@@ -353,6 +353,7 @@ namespace S2XConsole.ViewModels
 				if (list.Count == 0)
 				{
 					System.Windows.MessageBox.Show("No data supplied.", Settings.Default.AppDisplayName, MessageBoxButton.OK, MessageBoxImage.Hand);
+                    Logger.logger.add2log("MainViewModel::No data supplied. Return string.Empty");
 					return string.Empty;
 				}
 				text = MainViewModel.processJsonStrings(list);
@@ -363,6 +364,7 @@ namespace S2XConsole.ViewModels
 			{
 				text = Common.WrapXmlInDevInfo(text);
 			}
+            Logger.logger.add2log("MainViewModel::GetBarCodeData() out="+text);
 			return text;
             // "{\"s\":{\"WiFi\":{\"base\":0,\"v\":0,\"mode\":\"full\",\"nets\":[{\"ssid\":\"\\\"MyNetworkName1\\\"\",\"pri\":3,\"hid\":0,\"auth\":\"OPEN,SHARED\",\"km\":\"NONE\",\"wepk\":[\"*\",\"\",\"\",\"\"]},{\"ssid\":\"\\\"MyNetworkName2\\\"\",\"pri\":1,\"hid\":0,\"auth\":\"\",\"km\":\"WPA_PSK\",\"pskey\":\"*\"}]}},\"v\":\"1.0\"}"
 		}
@@ -433,7 +435,7 @@ namespace S2XConsole.ViewModels
 		}
 		private string GetBrowseData()
 		{
-            System.Diagnostics.Debug.WriteLine("MainViewModel::GetBrowseData()");
+            Logger.logger.add2log("MainViewModel::GetBrowseData()");
 			Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
 			openFileDialog.DefaultExt = ".xml";
 			openFileDialog.Filter = "Settings (.xml)|*.xml";

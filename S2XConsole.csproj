@@ -55,6 +55,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S2XConsole.Commands\CommandManagerHelper.cs" />
     <Compile Include="S2XConsole.Commands\CommandReference.cs" />

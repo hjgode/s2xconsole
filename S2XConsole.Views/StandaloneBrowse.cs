@@ -34,7 +34,7 @@ namespace S2XConsole.Views
 		}
 		private string GetBrowseData()
 		{
-            System.Diagnostics.Debug.WriteLine("StandAloneBrowse::GetBrowseData()");
+            Logger.logger.add2log("StandAloneBrowse::GetBrowseData()");
 			OpenFileDialog openFileDialog = new OpenFileDialog();
 			openFileDialog.DefaultExt = ".json";
 			openFileDialog.Filter = "Config files (*.xml;*.json;*.config;*.config_result)|*.xml;*.json;*.config;*.config_result|All files (*.*)|*.*";

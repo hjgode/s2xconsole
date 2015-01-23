@@ -1,0 +1,199 @@
+StandAloneBrowse::GetBrowseData()
+IsJsonString()
+IsJsonActionValid()
+TransformJsonText() in={
+  "action": "set",
+  "subsystems": {
+    "WiFi": {
+      "base": 0,    
+      "v": 0,      
+      "mode": "full",
+      "nets": [
+        {
+          "ssid": "\"MyNetworkName1\"",
+          "pri": 3,
+          "hid": 0,
+          "auth": "OPEN,SHARED",
+          "km": "NONE",
+          "wepk": [
+             "*",
+             "",
+             "",
+             ""
+          ]
+        },
+        {
+          "ssid": "\"MyNetworkName2\"",
+          "pri": 1,
+          "hid": 0,
+          "auth": "",
+          "km": "WPA_PSK",
+          "pskey": "*"
+        }
+      ]
+    }
+  },
+  "version": "1.0"
+}
+
+TransformJsonText() out={
+  "s": {
+    "WiFi": {
+      "base": 0,
+      "v": 0,
+      "mode": "full",
+      "nets": [
+        {
+          "ssid": "\"MyNetworkName1\"",
+          "pri": 3,
+          "hid": 0,
+          "auth": "OPEN,SHARED",
+          "km": "NONE",
+          "wepk": [
+            "*",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "ssid": "\"MyNetworkName2\"",
+          "pri": 1,
+          "hid": 0,
+          "auth": "",
+          "km": "WPA_PSK",
+          "pskey": "*"
+        }
+      ]
+    }
+  },
+  "v": "1.0"
+}
+MainViewModel::GetBarCodeData()
+page2 0: {
+  "s": {
+    "WiFi": {
+      "base": 0,
+      "v": 0,
+      "mode": "full",
+      "nets": [
+        {
+          "ssid": "\"MyNetworkName1\"",
+          "pri": 3,
+          "hid": 0,
+          "auth": "OPEN,SHARED",
+          "km": "NONE",
+          "wepk": [
+            "*",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "ssid": "\"MyNetworkName2\"",
+          "pri": 1,
+          "hid": 0,
+          "auth": "",
+          "km": "WPA_PSK",
+          "pskey": "*"
+        }
+      ]
+    }
+  },
+  "v": "1.0"
+}
+page2 parsed 0: {
+  "s": {
+    "WiFi": {
+      "base": 0,
+      "v": 0,
+      "mode": "full",
+      "nets": [
+        {
+          "ssid": "\"MyNetworkName1\"",
+          "pri": 3,
+          "hid": 0,
+          "auth": "OPEN,SHARED",
+          "km": "NONE",
+          "wepk": [
+            "*",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "ssid": "\"MyNetworkName2\"",
+          "pri": 1,
+          "hid": 0,
+          "auth": "",
+          "km": "WPA_PSK",
+          "pskey": "*"
+        }
+      ]
+    }
+  },
+  "v": "1.0"
+}
+TrimJsonWhitespace() in={
+  "s": {
+    "WiFi": {
+      "base": 0,
+      "v": 0,
+      "mode": "full",
+      "nets": [
+        {
+          "ssid": "\"MyNetworkName1\"",
+          "pri": 3,
+          "hid": 0,
+          "auth": "OPEN,SHARED",
+          "km": "NONE",
+          "wepk": [
+            "*",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "ssid": "\"MyNetworkName2\"",
+          "pri": 1,
+          "hid": 0,
+          "auth": "",
+          "km": "WPA_PSK",
+          "pskey": "*"
+        }
+      ]
+    }
+  },
+  "v": "1.0"
+}
+TrimJsonWhitespace() out={"s":{"WiFi":{"base":0,"v":0,"mode":"full","nets":[{"ssid":"\"MyNetworkName1\"","pri":3,"hid":0,"auth":"OPEN,SHARED","km":"NONE","wepk":["*","","",""]},{"ssid":"\"MyNetworkName2\"","pri":1,"hid":0,"auth":"","km":"WPA_PSK","pskey":"*"}]}},"v":"1.0"}
+BarcodeOptionViewModel::Update()
+data={"s":{"WiFi":{"base":0,"v":0,"mode":"full","nets":[{"ssid":"\"MyNetworkName1\"","pri":3,"hid":0,"auth":"OPEN,SHARED","km":"NONE","wepk":["*","","",""]},{"ssid":"\"MyNetworkName2\"","pri":1,"hid":0,"auth":"","km":"WPA_PSK","pskey":"*"}]}},"v":"1.0"}
+ instructions=
+ pass=
+ version=4
+Common.UsingJson=True
+SetSourceName=wifi_json.config.json
+IsNoReboot=False
+IsNoStartBarcode=True
+BarcodeOptionViewModel::Update()
+data={"s":{"WiFi":{"base":0,"v":0,"mode":"full","nets":[{"ssid":"\"MyNetworkName1\"","pri":3,"hid":0,"auth":"OPEN,SHARED","km":"NONE","wepk":["*","","",""]},{"ssid":"\"MyNetworkName2\"","pri":1,"hid":0,"auth":"","km":"WPA_PSK","pskey":"*"}]}},"v":"1.0"}
+ instructions=myNotes
+ pass=myPass
+ version=4
+Common.UsingJson=True
+SetSourceName=wifi_json.config.json
+IsNoReboot=False
+IsNoStartBarcode=True
+BarcodeOptionViewModel::Update()
+data={"s":{"WiFi":{"base":0,"v":0,"mode":"full","nets":[{"ssid":"\"MyNetworkName1\"","pri":3,"hid":0,"auth":"OPEN,SHARED","km":"NONE","wepk":["*","","",""]},{"ssid":"\"MyNetworkName2\"","pri":1,"hid":0,"auth":"","km":"WPA_PSK","pskey":"*"}]}},"v":"1.0"}
+ instructions=myNotes
+ pass=myPass
+ version=4
+Common.UsingJson=True
+SetSourceName=wifi_json.config.json
+IsNoReboot=False
+IsNoStartBarcode=True

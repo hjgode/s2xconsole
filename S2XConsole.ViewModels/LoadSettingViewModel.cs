@@ -132,7 +132,8 @@ namespace S2XConsole.ViewModels
         /// </summary>
         /// <returns></returns>
 		public string PageData()
-		{          
+		{
+            Logger.logger.add2log("LoadSettingViewModel::PageData()");
 			string text = string.Empty;
 			if (!Common.UsingJson)
 			{
@@ -158,6 +159,7 @@ namespace S2XConsole.ViewModels
 						})
 					});
 					text += xElement.ToString(SaveOptions.DisableFormatting);
+                    Logger.logger.add2log("LoadSettingsViewModel::PageData() SelectedFolder->text=" + text);
 				}
 				if (!string.IsNullOrEmpty(this.SelectedURL) && string.Empty != this.SelectedURL.Trim())
 				{
@@ -179,6 +181,7 @@ namespace S2XConsole.ViewModels
 						})
 					});
 					text += xElement2.ToString(SaveOptions.DisableFormatting);
+                    Logger.logger.add2log("LoadSettingsViewModel::PageData() SelectedURL->text=" + text);
 				}
 			}
 			else
@@ -201,12 +204,15 @@ namespace S2XConsole.ViewModels
 							item
 						});
 						jObject.Add(content);
+                        Logger.logger.add2log("LoadSettingsViewModel::PageData() Destination->jObject=" + content.ToString());
+
 					}
 					else
 					{
 						JArray content2 = new JArray(this.SelectedURL);
 						JProperty content3 = new JProperty("r", content2);
 						jObject.Add(content3);
+                        Logger.logger.add2log("LoadSettingsViewModel::PageData() Destination->SelectedURL=" + content3.ToString());
 					}
 				}
 				if (this.TextFile != null && this.TextFile.Trim() != string.Empty)
@@ -229,17 +235,24 @@ namespace S2XConsole.ViewModels
 						}
 					}
 					string value = File.ReadAllText(this.TextFile);
-					JValue content4 = new JValue(value);
+                    Logger.logger.add2log("LoadSettingsViewModel::PageData() ReadAllText('"+this.TextFile+"')=>" + value);
+                    JValue content4 = new JValue(value);
 					JProperty content5 = new JProperty(name, content4);
 					JObject content6 = new JObject(content5);
 					JProperty content7 = new JProperty("w", content6);
 					jObject.Add(content7);
+                    Logger.logger.add2log("LoadSettingsViewModel::PageData() content7=" + content7.ToString());
 				}
+
+                //process SelectedOta field
 				if (this.SelectedOta != null && this.SelectedOta.Trim() != string.Empty)
 				{
 					JProperty content8 = new JProperty("o", new JValue(this.SelectedOta));
 					jObject.Add(content8);
+                    Logger.logger.add2log("LoadSettingsViewModel::PageData() SelectedOta=" + content8.ToString());
 				}
+
+                //process SelectedTextFileFromUrl field
 				if (this.SelectedTextFileFromUrl != null && this.SelectedTextFileFromUrl.Trim() != string.Empty)
 				{
 					JArray jArray = new JArray();
@@ -252,15 +265,19 @@ namespace S2XConsole.ViewModels
 						jObject2.Add(content10);
 						jObject2.Add(content11);
 						jArray.Add(jObject2);
+                        Logger.logger.add2log("LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add " + jObject2.ToString());
 					}
 					else
 					{
 						jArray.Add(this.SelectedTextFileFromUrl);
+                        Logger.logger.add2log("LoadSettingsViewModel::PageData() SelectedTextFileFromUrl=" + SelectedTextFileFromUrl);
 					}
 					jObject.Add(content9);
+                    Logger.logger.add2log("LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9=" + content9);
 				}
 				text = jObject.ToString();
 			}
+            Logger.logger.add2log("LoadSettingViewModel::PageData() return="+text);
 			return text;
 		}
 	}

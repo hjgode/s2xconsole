@@ -1,0 +1,68 @@
+MainViewModel::GetBarCodeData()
+MainViewModel::page 0: 
+LoadSettingViewModel::PageData()
+LoadSettingViewModel::PageData() return=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+MainViewModel::page 1: <Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+MainViewModel::page 2: <Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+WrapXmlInDevInfo() in=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+WrapXmlInDevInfo() out=<DevInfo>
+  <Subsystem Name="SS_Client">
+    <Group Name="FileSystem">
+      <Group Name="Download">
+        <Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field>
+      </Group>
+    </Group>
+  </Subsystem>
+</DevInfo>
+MainViewModel::GetBarCodeData() out=<DevInfo>
+  <Subsystem Name="SS_Client">
+    <Group Name="FileSystem">
+      <Group Name="Download">
+        <Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field>
+      </Group>
+    </Group>
+  </Subsystem>
+</DevInfo>
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingViewModel::PageData() return=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+data=<DevInfo>
+  <Subsystem Name="SS_Client">
+    <Group Name="FileSystem">
+      <Group Name="Download">
+        <Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field>
+      </Group>
+    </Group>
+  </Subsystem>
+</DevInfo>
+ instructions=
+ pass=
+ version=2
+Common.UsingJson=False
+SetSourceName=scanngo.xml
+IsNoReboot=False
+IsNoStartBarcode=False
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingViewModel::PageData() return=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+data=<DevInfo>
+  <Subsystem Name="SS_Client">
+    <Group Name="FileSystem">
+      <Group Name="Download">
+        <Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field>
+      </Group>
+    </Group>
+  </Subsystem>
+  <Subsystem Name="SS_Client">
+    <Group Name="Download">
+      <Field Name="ProcessNow">True</Field>
+    </Group>
+  </Subsystem>
+</DevInfo>
+ instructions=myNotes
+ pass=myPass
+ version=3
+Common.UsingJson=False
+SetSourceName=scanngo.xml
+IsNoReboot=True
+IsNoStartBarcode=True

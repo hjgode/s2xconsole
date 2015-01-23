@@ -1,0 +1,746 @@
+TestStringWithinJson() in=textfile sample
+MainViewModel::GetBarCodeData()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "ftp://199.64.70.66/loadurl/json.txt"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestion/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "ftp://199.64.70.66/loadurl"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "ftp://199.64.70.66/textfiles",
+  "d": "myfolder/DestTextFileFromURL"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "ftp://199.64.70.66/textfiles",
+    "d": "myfolder/DestTextFileFromURL"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+MainViewModel::page2 0: {
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+MainViewModel::page2 parsed 0: {
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+TrimJsonWhitespace() in={
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+TrimJsonWhitespace() out={"v":1.0,"r":["ftp://199.64.70.66/loadurl/json.txt"],"w":{"TextFileDestion/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/loadurl","c":[{"s":"ftp://199.64.70.66/textfiles","d":"myfolder/DestTextFileFromURL"}]}
+MainViewModel::GetBarCodeData() out={"v":1.0,"r":["ftp://199.64.70.66/loadurl/json.txt"],"w":{"TextFileDestion/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/loadurl","c":[{"s":"ftp://199.64.70.66/textfiles","d":"myfolder/DestTextFileFromURL"}]}
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "ftp://199.64.70.66/loadurl/json.txt"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestion/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "ftp://199.64.70.66/loadurl"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "ftp://199.64.70.66/textfiles",
+  "d": "myfolder/DestTextFileFromURL"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "ftp://199.64.70.66/textfiles",
+    "d": "myfolder/DestTextFileFromURL"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+data={"v":1.0,"r":["ftp://199.64.70.66/loadurl/json.txt"],"w":{"TextFileDestion/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/loadurl","c":[{"s":"ftp://199.64.70.66/textfiles","d":"myfolder/DestTextFileFromURL"}]}
+ instructions=
+ pass=
+ version=4
+Common.UsingJson=True
+SetSourceName=json.txt
+IsNoReboot=False
+IsNoStartBarcode=True
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "ftp://199.64.70.66/loadurl/json.txt"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestion/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "ftp://199.64.70.66/loadurl"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "ftp://199.64.70.66/textfiles",
+  "d": "myfolder/DestTextFileFromURL"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "ftp://199.64.70.66/textfiles",
+    "d": "myfolder/DestTextFileFromURL"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+data={"v":1.0,"r":["ftp://199.64.70.66/loadurl/json.txt"],"w":{"TextFileDestion/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/loadurl","c":[{"s":"ftp://199.64.70.66/textfiles","d":"myfolder/DestTextFileFromURL"}]}
+ instructions=myNotes
+ pass=myPass
+ version=4
+Common.UsingJson=True
+SetSourceName=json.txt
+IsNoReboot=False
+IsNoStartBarcode=True
+MainViewModel::GetBarCodeData()
+MainViewModel::page 0: 
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() SelectedURL->text=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+LoadSettingViewModel::PageData() return=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+MainViewModel::page 1: <Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+MainViewModel::page 2: <Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+WrapXmlInDevInfo() in=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+WrapXmlInDevInfo() out=<DevInfo>
+  <Subsystem Name="SS_Client">
+    <Group Name="FileSystem">
+      <Group Name="Download">
+        <Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field>
+      </Group>
+    </Group>
+  </Subsystem>
+</DevInfo>
+MainViewModel::GetBarCodeData() out=<DevInfo>
+  <Subsystem Name="SS_Client">
+    <Group Name="FileSystem">
+      <Group Name="Download">
+        <Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field>
+      </Group>
+    </Group>
+  </Subsystem>
+</DevInfo>
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() SelectedURL->text=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+LoadSettingViewModel::PageData() return=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+data=<DevInfo>
+  <Subsystem Name="SS_Client">
+    <Group Name="FileSystem">
+      <Group Name="Download">
+        <Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field>
+      </Group>
+    </Group>
+  </Subsystem>
+</DevInfo>
+ instructions=
+ pass=
+ version=2
+Common.UsingJson=False
+SetSourceName=scanngo.xml
+IsNoReboot=False
+IsNoStartBarcode=False
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() SelectedURL->text=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+LoadSettingViewModel::PageData() return=<Subsystem Name="SS_Client"><Group Name="FileSystem"><Group Name="Download"><Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field></Group></Group></Subsystem>
+data=<DevInfo>
+  <Subsystem Name="SS_Client">
+    <Group Name="FileSystem">
+      <Group Name="Download">
+        <Field Name="Url">ftp://199.64.70.66/loadurl/scanngo.xml</Field>
+      </Group>
+    </Group>
+  </Subsystem>
+  <Subsystem Name="SS_Client">
+    <Group Name="Download">
+      <Field Name="ProcessNow">True</Field>
+    </Group>
+  </Subsystem>
+</DevInfo>
+ instructions=orginal xml down sng
+ pass=
+ version=3
+Common.UsingJson=False
+SetSourceName=scanngo.xml
+IsNoReboot=True
+IsNoStartBarcode=True
+MainViewModel::GetBarCodeData()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "SelectedURL"
+]
+LoadSettingsViewModel::PageData() SelectedOta="o": "SelectedFolder"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "SelectedOta",
+  "d": "SelectedTextFileFromUrl/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "SelectedOta",
+    "d": "SelectedTextFileFromUrl/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "SelectedURL"
+  ],
+  "o": "SelectedFolder",
+  "c": [
+    {
+      "s": "SelectedOta",
+      "d": "SelectedTextFileFromUrl/test"
+    }
+  ]
+}
+MainViewModel::page2 0: {
+  "v": 1.0,
+  "r": [
+    "SelectedURL"
+  ],
+  "o": "SelectedFolder",
+  "c": [
+    {
+      "s": "SelectedOta",
+      "d": "SelectedTextFileFromUrl/test"
+    }
+  ]
+}
+MainViewModel::page2 parsed 0: {
+  "v": 1.0,
+  "r": [
+    "SelectedURL"
+  ],
+  "o": "SelectedFolder",
+  "c": [
+    {
+      "s": "SelectedOta",
+      "d": "SelectedTextFileFromUrl/test"
+    }
+  ]
+}
+TrimJsonWhitespace() in={
+  "v": 1.0,
+  "r": [
+    "SelectedURL"
+  ],
+  "o": "SelectedFolder",
+  "c": [
+    {
+      "s": "SelectedOta",
+      "d": "SelectedTextFileFromUrl/test"
+    }
+  ]
+}
+TrimJsonWhitespace() out={"v":1.0,"r":["SelectedURL"],"o":"SelectedFolder","c":[{"s":"SelectedOta","d":"SelectedTextFileFromUrl/test"}]}
+MainViewModel::GetBarCodeData() out={"v":1.0,"r":["SelectedURL"],"o":"SelectedFolder","c":[{"s":"SelectedOta","d":"SelectedTextFileFromUrl/test"}]}
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "SelectedURL"
+]
+LoadSettingsViewModel::PageData() SelectedOta="o": "SelectedFolder"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "SelectedOta",
+  "d": "SelectedTextFileFromUrl/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "SelectedOta",
+    "d": "SelectedTextFileFromUrl/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "SelectedURL"
+  ],
+  "o": "SelectedFolder",
+  "c": [
+    {
+      "s": "SelectedOta",
+      "d": "SelectedTextFileFromUrl/test"
+    }
+  ]
+}
+data={"v":1.0,"r":["SelectedURL"],"o":"SelectedFolder","c":[{"s":"SelectedOta","d":"SelectedTextFileFromUrl/test"}]}
+ instructions=
+ pass=
+ version=4
+Common.UsingJson=True
+SetSourceName=SelectedURL
+IsNoReboot=False
+IsNoStartBarcode=True
+TestStringWithinJson() in=textfile sample
+MainViewModel::GetBarCodeData()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "LoadSoftwareFromUrl"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestination/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "LoadUpdateFromURL"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "LoadTextFileFromURL",
+  "d": "DestinationForTextFileFromURL/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "LoadTextFileFromURL",
+    "d": "DestinationForTextFileFromURL/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+MainViewModel::page2 0: {
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+MainViewModel::page2 parsed 0: {
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+TrimJsonWhitespace() in={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+TrimJsonWhitespace() out={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+MainViewModel::GetBarCodeData() out={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "LoadSoftwareFromUrl"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestination/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "LoadUpdateFromURL"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "LoadTextFileFromURL",
+  "d": "DestinationForTextFileFromURL/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "LoadTextFileFromURL",
+    "d": "DestinationForTextFileFromURL/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+data={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+ instructions=
+ pass=
+ version=4
+Common.UsingJson=True
+SetSourceName=LoadSoftwareFromUrl
+IsNoReboot=False
+IsNoStartBarcode=True
+MainViewModel::GetBarCodeData()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "LoadSoftwareFromUrl"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestination/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "LoadUpdateFromURL"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "LoadTextFileFromURL",
+  "d": "DestinationForTextFileFromURL/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "LoadTextFileFromURL",
+    "d": "DestinationForTextFileFromURL/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+MainViewModel::page2 0: {
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+MainViewModel::page2 parsed 0: {
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+TrimJsonWhitespace() in={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+TrimJsonWhitespace() out={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+MainViewModel::GetBarCodeData() out={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "LoadSoftwareFromUrl"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestination/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "LoadUpdateFromURL"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "LoadTextFileFromURL",
+  "d": "DestinationForTextFileFromURL/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "LoadTextFileFromURL",
+    "d": "DestinationForTextFileFromURL/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+data={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+ instructions=
+ pass=
+ version=4
+Common.UsingJson=True
+SetSourceName=LoadSoftwareFromUrl
+IsNoReboot=False
+IsNoStartBarcode=True
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "LoadSoftwareFromUrl"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestination/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "LoadUpdateFromURL"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "LoadTextFileFromURL",
+  "d": "DestinationForTextFileFromURL/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "LoadTextFileFromURL",
+    "d": "DestinationForTextFileFromURL/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+data={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+ instructions=notes
+ pass=password
+ version=4
+Common.UsingJson=True
+SetSourceName=LoadSoftwareFromUrl
+IsNoReboot=False
+IsNoStartBarcode=True
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "LoadSoftwareFromUrl"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestination/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "LoadUpdateFromURL"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "LoadTextFileFromURL",
+  "d": "DestinationForTextFileFromURL/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "LoadTextFileFromURL",
+    "d": "DestinationForTextFileFromURL/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+data={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+ instructions=notes
+ pass=password
+ version=4
+Common.UsingJson=True
+SetSourceName=LoadSoftwareFromUrl
+IsNoReboot=False
+IsNoStartBarcode=True
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "LoadSoftwareFromUrl"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestination/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "LoadUpdateFromURL"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "LoadTextFileFromURL",
+  "d": "DestinationForTextFileFromURL/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "LoadTextFileFromURL",
+    "d": "DestinationForTextFileFromURL/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+data={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+ instructions=notes
+ pass=password
+ version=4
+Common.UsingJson=True
+SetSourceName=LoadSoftwareFromUrl
+IsNoReboot=False
+IsNoStartBarcode=True

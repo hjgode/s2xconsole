@@ -234,7 +234,7 @@ namespace S2XConsole.ViewModels
 		}
         public S2X.S2X Update()
 		{
-            System.Diagnostics.Debug.WriteLine("BarcodeOptionViewModel::Update()");
+            Logger.logger.add2log("BarcodeOptionViewModel::Update()");
 			try
 			{
 				string name = Enum.GetName(typeof(Symbol), this.BarcodeType);
@@ -280,7 +280,7 @@ namespace S2XConsole.ViewModels
                         */
                         if (symbol == Symbol.PDF417)
                         {
-                            System.Diagnostics.Debug.WriteLine(string.Format(
+                            Logger.logger.add2log(string.Format(
                                 "data={0}\r\n instructions={1}\r\n pass={2}\r\n version={3}\r\nCommon.UsingJson={4}\r\nSetSourceName={5}\r\nIsNoReboot={6}\r\nIsNoStartBarcode={7}",
                                 text2,
                                 this.Instruction,

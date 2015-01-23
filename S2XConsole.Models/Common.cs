@@ -121,6 +121,7 @@ namespace S2XConsole.Models
 		}
 		public static bool IsJsonString(string input)
 		{
+            Logger.logger.add2log("IsJsonString() in="+input);
 			bool result;
 			try
 			{
@@ -131,11 +132,12 @@ namespace S2XConsole.Models
 			{
 				result = false;
 			}
+            Logger.logger.add2log("IsJsonString() out="+result);
 			return result;
 		}
 		public static bool IsJsonActionValid(string input)
 		{
-            System.Diagnostics.Debug.WriteLine("IsJsonActionValid");
+            Logger.logger.add2log("IsJsonActionValid()");
 			try
 			{
 				JObject jObject = JObject.Parse(input);
@@ -159,7 +161,7 @@ namespace S2XConsole.Models
 		}
 		internal static string TransformJsonText(string input)
 		{
-            System.Diagnostics.Debug.WriteLine("TransformJsonText in=" + input);
+            Logger.logger.add2log("TransformJsonText() in=" + input);
 			string result = input;
 			try
 			{
@@ -204,12 +206,12 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
-            System.Diagnostics.Debug.WriteLine("TransformJsonText out=" + result);
+            Logger.logger.add2log("TransformJsonText() out=" + result);
 			return result;
 		}
 		internal static bool TestStringWithinJson(string input)
 		{
-            System.Diagnostics.Debug.WriteLine("TestStringWithinJson in=" + input);
+            Logger.logger.add2log("TestStringWithinJson() in=" + input);
 			bool result;
 			try
 			{
@@ -227,7 +229,7 @@ namespace S2XConsole.Models
 		}
 		private static string oldTransformJsonText(string input)
 		{
-            System.Diagnostics.Debug.WriteLine("oldTransformJsonText in=" + input);
+            Logger.logger.add2log("oldTransformJsonText() in=" + input);
 			string result = input;
 			try
 			{
@@ -254,12 +256,12 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
-            System.Diagnostics.Debug.WriteLine("oldTransformJsonText out=" + result);
+            Logger.logger.add2log("oldTransformJsonText() out=" + result);
 			return result;
 		}
 		private static void renameJsonToken(JObject jo, string tokenName, string newTokenName)
 		{
-            System.Diagnostics.Debug.WriteLine("renameJsonToken");
+            Logger.logger.add2log("renameJsonToken()");
 			JToken jToken = jo.SelectToken(tokenName);
 			if (jToken != null)
 			{
@@ -270,7 +272,7 @@ namespace S2XConsole.Models
 		}
 		public static string TrimJsonWhitespace(string input)
 		{
-            System.Diagnostics.Debug.WriteLine("TrimJsonWhitespace in="+input);
+            Logger.logger.add2log("TrimJsonWhitespace() in="+input);
 			string result = input;
 			try
 			{
@@ -280,7 +282,7 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
-            System.Diagnostics.Debug.WriteLine("TrimJsonWhitespace out=" + result);
+            Logger.logger.add2log("TrimJsonWhitespace() out=" + result);
             return result;
 		}
 		public static bool IsXmlString(string input)
@@ -299,6 +301,7 @@ namespace S2XConsole.Models
 		}
 		public static bool IsXmlFile(string filePath)
 		{
+            Logger.logger.add2log("IsXmlFile() in=" + filePath);
 			bool result;
 			try
 			{
@@ -309,11 +312,12 @@ namespace S2XConsole.Models
 			{
 				result = false;
 			}
+            Logger.logger.add2log("IsXmlFile() out=" + result);
 			return result;
 		}
 		public static string PrepareXmlContent(string xml)
 		{
-            System.Diagnostics.Debug.WriteLine("PrepareXmlContent in=" + xml);
+            Logger.logger.add2log("PrepareXmlContent() in=" + xml);
             string result = xml;
 			try
 			{
@@ -332,12 +336,12 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
-            System.Diagnostics.Debug.WriteLine("PrepareXmlContent out=" + result);
+            Logger.logger.add2log("PrepareXmlContent out=" + result);
 			return result;
 		}
 		public static string WrapXmlInDevInfo(string input)
 		{
-            System.Diagnostics.Debug.WriteLine("WrapXmlInDevInfo in=" + input);
+            Logger.logger.add2log("WrapXmlInDevInfo() in=" + input);
 			string result = input;
 			try
 			{
@@ -359,7 +363,7 @@ namespace S2XConsole.Models
 			catch (Exception)
 			{
 			}
-            System.Diagnostics.Debug.WriteLine("WrapXmlInDevInfo out=" + result);
+            Logger.logger.add2log("WrapXmlInDevInfo() out=" + result);
 			return result;
 		}
 		public static void WriteEntryToLog(string message, EventLogEntryType type)

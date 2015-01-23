@@ -1,0 +1,175 @@
+TestStringWithinJson() in=textfile sample
+MainViewModel::GetBarCodeData()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "ftp://199.64.70.66/loadurl/json.txt"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestion/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "ftp://199.64.70.66/loadurl"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "ftp://199.64.70.66/textfiles",
+  "d": "myfolder/DestTextFileFromURL"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "ftp://199.64.70.66/textfiles",
+    "d": "myfolder/DestTextFileFromURL"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+MainViewModel::page2 0: {
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+MainViewModel::page2 parsed 0: {
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+TrimJsonWhitespace() in={
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+TrimJsonWhitespace() out={"v":1.0,"r":["ftp://199.64.70.66/loadurl/json.txt"],"w":{"TextFileDestion/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/loadurl","c":[{"s":"ftp://199.64.70.66/textfiles","d":"myfolder/DestTextFileFromURL"}]}
+MainViewModel::GetBarCodeData() out={"v":1.0,"r":["ftp://199.64.70.66/loadurl/json.txt"],"w":{"TextFileDestion/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/loadurl","c":[{"s":"ftp://199.64.70.66/textfiles","d":"myfolder/DestTextFileFromURL"}]}
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "ftp://199.64.70.66/loadurl/json.txt"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestion/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "ftp://199.64.70.66/loadurl"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "ftp://199.64.70.66/textfiles",
+  "d": "myfolder/DestTextFileFromURL"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "ftp://199.64.70.66/textfiles",
+    "d": "myfolder/DestTextFileFromURL"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+data={"v":1.0,"r":["ftp://199.64.70.66/loadurl/json.txt"],"w":{"TextFileDestion/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/loadurl","c":[{"s":"ftp://199.64.70.66/textfiles","d":"myfolder/DestTextFileFromURL"}]}
+ instructions=
+ pass=
+ version=4
+Common.UsingJson=True
+SetSourceName=json.txt
+IsNoReboot=False
+IsNoStartBarcode=True
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "ftp://199.64.70.66/loadurl/json.txt"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestion/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "ftp://199.64.70.66/loadurl"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "ftp://199.64.70.66/textfiles",
+  "d": "myfolder/DestTextFileFromURL"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "ftp://199.64.70.66/textfiles",
+    "d": "myfolder/DestTextFileFromURL"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "ftp://199.64.70.66/loadurl/json.txt"
+  ],
+  "w": {
+    "TextFileDestion/textfile.txt.txt": "textfile sample"
+  },
+  "o": "ftp://199.64.70.66/loadurl",
+  "c": [
+    {
+      "s": "ftp://199.64.70.66/textfiles",
+      "d": "myfolder/DestTextFileFromURL"
+    }
+  ]
+}
+data={"v":1.0,"r":["ftp://199.64.70.66/loadurl/json.txt"],"w":{"TextFileDestion/textfile.txt.txt":"textfile sample"},"o":"ftp://199.64.70.66/loadurl","c":[{"s":"ftp://199.64.70.66/textfiles","d":"myfolder/DestTextFileFromURL"}]}
+ instructions=myNotes
+ pass=myPass
+ version=4
+Common.UsingJson=True
+SetSourceName=json.txt
+IsNoReboot=False
+IsNoStartBarcode=True

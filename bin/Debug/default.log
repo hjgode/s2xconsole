@@ -1,0 +1,44 @@
+BarcodeOptionViewModel::Update()
+LoadSettingViewModel::PageData()
+LoadSettingsViewModel::PageData() Destination->SelectedURL="r": [
+  "LoadSoftwareFromUrl"
+]
+LoadSettingsViewModel::PageData() ReadAllText('D:\svn\git\s2xconsole\sample\textfile.txt.txt')=>textfile sample
+LoadSettingsViewModel::PageData() content7="w": {
+  "TextFileDestination/textfile.txt.txt": "textfile sample"
+}
+LoadSettingsViewModel::PageData() SelectedOta="o": "LoadUpdateFromURL"
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl::jArray.add {
+  "s": "LoadTextFileFromURL",
+  "d": "DestinationForTextFileFromURL/test"
+}
+LoadSettingsViewModel::PageData() SelectedTextFileFromUrl-content9="c": [
+  {
+    "s": "LoadTextFileFromURL",
+    "d": "DestinationForTextFileFromURL/test"
+  }
+]
+LoadSettingViewModel::PageData() return={
+  "v": 1.0,
+  "r": [
+    "LoadSoftwareFromUrl"
+  ],
+  "w": {
+    "TextFileDestination/textfile.txt.txt": "textfile sample"
+  },
+  "o": "LoadUpdateFromURL",
+  "c": [
+    {
+      "s": "LoadTextFileFromURL",
+      "d": "DestinationForTextFileFromURL/test"
+    }
+  ]
+}
+data={"v":1.0,"r":["LoadSoftwareFromUrl"],"w":{"TextFileDestination/textfile.txt.txt":"textfile sample"},"o":"LoadUpdateFromURL","c":[{"s":"LoadTextFileFromURL","d":"DestinationForTextFileFromURL/test"}]}
+ instructions=notes
+ pass=password
+ version=4
+Common.UsingJson=True
+SetSourceName=LoadSoftwareFromUrl
+IsNoReboot=False
+IsNoStartBarcode=True
